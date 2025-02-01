@@ -6,7 +6,69 @@
         xmlns:local="clr-namespace:Llama_IDScanner"
         mc:Ignorable="d"
         Title="Llama ID Scanner" Height="450" Width="800">
+    <Window.Background>
+        Gray
+    </Window.Background>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+
+
+        <TextBlock  Text="Scanner Status:" 
+               Grid.Column="0" 
+               Grid.ColumnSpan="2"
+               Grid.Row="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+                    FontSize="15"
+               />
+        <TextBlock x:Name="ScannerStatusTxtBlk" Text="PlaceHolder-123456"
+                   Grid.Column="2"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Padding="5"
+                   FontSize="15"
+                   />
+
+
+
+
+        <Button x:Name="TestBtn" Content="Get Scanner Status"
+                Grid.Row="8"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Height="65"
+                Width="145"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="15"
+                Click="TestBtn_Click"
+                />
     </Grid>
 </Window>
